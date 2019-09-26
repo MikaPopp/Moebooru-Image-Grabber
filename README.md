@@ -1,4 +1,7 @@
 # Moebooru Image Grabber
+![Image Header](https://b.catgirlsare.sexy/GOiw.png)
+
+## About
 This is a simple but helpful tool to scrape alot of pictures of Moebooru based websites. Currently two websites are supported:
 1. [**Konachan.com**](https://Konachan.com)
 2. [**Yande.re**](https://Yande.re)
@@ -14,4 +17,3 @@ For now the GUI is pretty ugly and basic, but I'm trying to add more to it, e.g.
 
 ## Plans:
 Besides adding more pages as a source, adding Danbooru support and cleaning up the GUi there is not much I can think of to add to this little progress. Maybe a status/progress bar would be a good idea but alot of times this is not really needed since either you just grab a couple of pictures or tons and leave the programm running in the background. If there is anything you want to have added to this you can just leave me a message. 
-
