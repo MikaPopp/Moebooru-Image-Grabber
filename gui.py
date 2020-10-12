@@ -12,14 +12,14 @@ from tkinter import *
 from tkinter.ttk import *
 from ttkthemes import themed_tk as tk
 
-def start_grabbing(window, source, tags, count, c2, c3, c4):
+def start_grabbing(window, source, tags, count, c1, c2, c3):
     window.destroy()  
-    if c4 == 1:
+    if c3 == 1:
         tags += " rating:s"
     else:
-        if c2 == 1:
+        if c1 == 1:
             tags += " rating:e "
-        if c3 == 1:
+        if c2 == 1:
             tags += "rating:q "
     grab(tags, grab_count=count, source=source)
 
@@ -53,14 +53,14 @@ def gui():
     dropdown_source.grid(row=1)
     label_rating = Label(text="Rating (optional):", background="black")
     label_rating.grid(row=2)
+    var_one = IntVar()
     var_two = IntVar()
     var_three = IntVar()
-    var_four = IntVar()
-    check_rating_explicit = Checkbutton(window, text="Explicit", variable=var_two)
+    check_rating_explicit = Checkbutton(window, text="Explicit", variable=var_one)
     check_rating_explicit.grid(row=3)
-    check_rating_questionable = Checkbutton(window, text="Questionable", variable=var_three)
+    check_rating_questionable = Checkbutton(window, text="Questionable", variable=var_two)
     check_rating_questionable.grid(row=4)
-    check_rating_safe = Checkbutton(window, text="Safe", variable=var_four)
+    check_rating_safe = Checkbutton(window, text="Safe", variable=var_three)
     check_rating_safe.grid(row=5)
     label_tags = Label(text="Tags (optional):", background="black")
     label_tags.grid(row=6)
@@ -73,7 +73,7 @@ def gui():
     entry_count.config(validate="key", validatecommand=(reg, "%P"))
     entry_count.grid(row=9)
     button_start = Button(text="Start", state=ACTIVE, width=4, command=lambda:start_grabbing(window=window, source=value_option_source.get(), tags=entry_tags.get(),
-     count=entry_count.get(), c2=var_two.get(), c3=var_three.get(), c4=var_four.get()))
+     count=entry_count.get(), c1=var_one.get(), c2=var_two.get(), c3=var_three.get()))
     button_start.grid(row=10)
     window.mainloop()
 
