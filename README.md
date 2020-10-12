@@ -1,19 +1,30 @@
 # Moebooru Image Grabber
-![Image Header](https://b.catgirlsare.sexy/GOiw.png)
+![Image Header](https://b.catgirlsare.sexy/1Fyoj028.png)
 
 ## About
 This is a simple but helpful tool to scrape alot of pictures of Moebooru based websites. Currently two websites are supported:
 1. [**Konachan.com**](https://Konachan.com)
 2. [**Yande.re**](https://Yande.re)
 
-For now the GUI is pretty ugly and basic, but I'm trying to add more to it, e.g. support for other websites like [**Danbooru**](https://danbooru.donmai.us). You are free to use and modify this as much as you want, but the best thing about this is, no one, yes! no one will judge you when you are downloading questionable/explicit pictures :^).
+## Demonstration
+![](https://b.catgirlsare.sexy/AXQxdUM5.gif)
 
 ## Setup/How to use
+### Usage of the release
+1. Download the newest [**release**](https://github.com/MikaPopp/Moebooru-Image-Grabber/releases)
+2. Run the grabber.exe
+3. Open the images folder for all the images
 
-1. Clone this [**repository**](https://github.com/MikaPopp/Moebooru-Image-Grabber)
+### Usage of the repository
+1. Clone/Download this [**repository**](https://github.com/MikaPopp/Moebooru-Image-Grabber)
 2. Install following Dependencies:
 	1. [**Pybooru**](https://pypi.org/project/Pybooru/)
-3. Run the gui.py and start grabbing!
+	2. [**requests**](https://pypi.org/project/requests/)
+	3. [**psutil**](https://pypi.org/project/psutil/)
+	4. [**ttkthemes**](https://pypi.org/project/ttkthemes/)
+3. Run the grabber.py
+4. Open the images folder for all the images
 
-## Plans:
-Besides adding more pages as a source, adding Danbooru support and cleaning up the GUi there is not much I can think of to add to this little progress. Maybe a status/progress bar would be a good idea but alot of times this is not really needed since either you just grab a couple of pictures or tons and leave the programm running in the background. If there is anything you want to have added to this you can just leave me a message. 
+## Disclaimer
+By using this software you agree to the terms of service of the respective owners, if you do not agree to them, please
+refrain from using this software.
